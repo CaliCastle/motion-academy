@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Cali 前端动效魔法学院
 
-## Getting Started
+![Poster](./app/opengraph-image.png)
 
-First, run the development server:
-
+克隆到本地以后安装 npm 依赖：
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+pnpm install
+# 或者
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+然后开启本地服务器：
+```bash
+pnpm dev
+# 或者
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+在浏览器中打开 [http://localhost:3000](http://localhost:3000) 即可看到页面。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 目录引导
 
-## Learn More
+我们可以看到 `app/lessons` 目录里有着对应的每节课的源码：
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 可以在浏览器访问 http://localhost:3000/lessons/n 即可查看到第**n**节可的初始效果。
+  - 如果你想跟着视频教学一起来的话，可以打开 `app/lessons/n/page.tsx` 来跟着教学一起实现。
+- 可以在浏览器访问 http://localhost:3000/lessons/n/final 即可查看到第**n**节课的最终效果。
+    - 如果你只想看最终实现的代码，可以打开 `app/lessons/n/final/page.tsx` 即可。
