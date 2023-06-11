@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold backdrop-blur-xl px-5 py-3 border-2 border-white/10 backdrop-brightness-75 bg-black/20 rounded-3xl">
+      <h1 className="text-4xl font-bold backdrop-blur-xl px-5 py-3 border-2 border-white/10 backdrop-brightness-75 text-white bg-black/20 rounded-3xl">
         欢迎来到 Cali 前端动效魔法学院
       </h1>
 
