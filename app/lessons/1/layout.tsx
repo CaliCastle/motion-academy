@@ -4,10 +4,6 @@ export const metadata: Metadata = {
   title: "高雅的通知动画",
 };
 
-export default function Layout({
-  children,
-}: {
-  children: React.ReactChildren;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return children;
 }
